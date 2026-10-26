@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        
+        <title>Text Hizalama ve Display</title>
+        <style>
+                
+            .d-inline-block {
+                display: inline-block;
+            }
+        
+        </style>
+    </head>
+<body class="p-5">
+    
+    <p class="text-justify"> #text-justify:metni hem sol hem de sağ kenara dümdüz yaslar.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, commodi nostrum impedit excepturi doloribus, nesciunt ex aliquid nam necessitatibus cumque dignissimos iure officia asperiores nemo quos sit, suscipit voluptas quo.
+    
+    </p>
+    
+    <p class="text-left"> #text-left:Yazıyı sola hizalar.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto ducimus molestiae repellendus odit officiis incidunt rerum veniam in eligendi temporibus perspiciatis. Hic tenetur earum laudantium. Hic error cumque placeat.
+    
+    </p>
+    
+    <p class="text-right"> #text-right:Yazıyı sağa hizalar.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto ducimus molestiae repellendus odit officiis incidunt rerum veniam in eligendi temporibus perspiciatis. Hic tenetur earum laudantium. Hic error cumque placeat.
+    
+    </p>
+    
+    <p class="text-center"> #text-center:Yazıyı ortalar.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto ducimus molestiae repellendus odit officiis incidunt rerum veniam in eligendi temporibus perspiciatis. Hic tenetur earum laudantium. Hic error cumque placeat.
+    
+    </p>
+    
+    
+    <blockquote class="blockquote"> #blockquote:Web sitelerinde "ünlü sözleri", "müşteri yorumları" veya önemli paragrafları göstermek için kullanılır.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, illum tempore? Atque repudiandae hic animi facilis repellendus voluptas perspiciatis eum, blanditiis optio expedita odio ipsum debitis nisi numquam unde ducimus?</p>
+        <footer class="blockquote-footer">Meto Sırlı</footer>
+    </blockquote>
+    
+    <blockquote class="blockquote text-right"> #blockquote text-rightAlıntıyı sayfanın sağına yaslar. Genelde dergi tasarımlarında, çarpıcı sözleri kenara itmek için kullanılır.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, illum tempore? Atque repudiandae hic animi facilis repellendus voluptas perspiciatis eum, blanditiis optio expedita odio ipsum debitis nisi numquam unde ducimus?</p>
+        <footer class="blockquote-footer">Meto Sırlı</footer>
+    </blockquote>
+    
+    <blockquote class="blockquote text-left"> #blockquote text-left:Alıntıyı sayfanın soluna yaslar. Genelde dergi tasarımlarında, çarpıcı sözleri kenara itmek için kullanılır.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, illum tempore? Atque repudiandae hic animi facilis repellendus voluptas perspiciatis eum, blanditiis optio expedita odio ipsum debitis nisi numquam unde ducimus?</p>
+        <footer class="blockquote-footer">Meto Sırlı</footer> #blockquote-footer: Alıntıyı kimin yaptığını (Yazar, Kaynak) yazmak için kullanılır. Yazıyı grileştirir ve biraz küçültür.
+    </blockquote>
+    
+    <blockquote class="blockquote text-center"> #blockquote text-center:Alıntıyı sayfanın tam ortasına hizalar. Şiirsel sözler için harikadır.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, illum tempore? Atque repudiandae hic animi facilis repellendus voluptas perspiciatis eum, blanditiis optio expedita odio ipsum debitis nisi numquam unde ducimus?</p>
+        <footer class="blockquote-footer">Meto Sırlı</footer> #blockquote-footer: Alıntıyı kimin yaptığını (Yazar, Kaynak) yazmak için kullanılır. Yazıyı grileştirir ve biraz küçültür.
+    </blockquote>
+    
+    <span class="d-block bg-danger mb-2">d-block</span> #d-block:Öğeyi bulunduğu satıra tamamen yayar (genişlik %100 olur) ve kendisinden sonra gelen öğeyi alt satıra iter.
+    <span class="d-block bg-danger">d-block</span>
+    
+    <br><br>
+    
+    <div class="d-inline bg-warning">d-inline</div>
+    <div class="d-inline bg-warning">d-inline</div>
+    
+    <br><br>
+    
+    <div class="d-inline-block bg-primary"> #d-inline:Öğe sadece içindeki yazı kadar yer kaplar. Yanına başka öğelerin gelmesine izin verir.
+        <h3>Product Name</h3>
+        Description
+    </div>
+
+    <div class="d-inline-block bg-primary">
+        <h3>Product Name</h3>
+        Description
+    </div>
+    
+    <br><br>
+    
+    <div class="d-none bg-warning">d-none</div> #d-none:Öğeyi sayfadan tamamen siler.
+    
+    <br><br>
+    
+    <div class="invisible bg-warning">invisible</div> #invisible:Öğeyi görünmez yapar ama silmez.(yani sayfada F12 yapınca kodlarda gözükür.)
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>

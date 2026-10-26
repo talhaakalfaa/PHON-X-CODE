@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>Collapse & Accordion</title>
+    </head>
+<body class="w-75 mx-auto my-4">
+    
+    <p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content"> #collapse:Ekranda bir butona veya linke tıkladığında aşağıya doğru kayarak açılan, tekrar tıkladığında yukarı doğru toplanıp gizlenen esnek bir içerik alanıdır.
+            Button
+        </button>
+        <a href="#content" class="btn btn-primary" data-toggle="collapse"> #content:butonun "Kimi açıp kapatacağını" gösteren bir hedef adresidir.
+            Link
+        </a>
+    </p>
+    <div id="content" class="collapse show"> #collapse show:İçerik sayfa yüklenir yüklenmez açık (görünür) gelir.
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem placeat, quibusdam laboriosam qui aut porro itaque quisquam cumque animi corrupti. Eos repellat et dolor nobis asperiores? Et, culpa iste.</p>
+    </div>
+    
+    <br><br>
+    
+<div id="accordion">
+    
+    
+    <div class="card mb-1">
+        <div class="card-header">
+            <a href="#collapseOne" class="card-link" data-toggle="collapse">
+                item 1
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        
+            <div class="card-body"> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non earum, voluptates explicabo corrupti a exercitationem officiis rerum voluptatem, minima nemo fuga nulla eos sequi dicta dolores at saepe aut.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card mb-1">
+        <div class="card-header">
+            <a href="#collapseTwo" class="card-link" data-toggle="collapse">
+                item 2
+            </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        
+            <div class="card-body"> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non earum, voluptates explicabo corrupti a exercitationem officiis rerum voluptatem, minima nemo fuga nulla eos sequi dicta dolores at saepe aut.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="card mb-1">
+        <div class="card-header">
+            <a href="#collapseThere" class="card-link" data-toggle="collapse"> #data-toggle(Aksiyonu Başlatan):"Bu butona tıklandığında bir animasyon başlasın" emrini verir.
+                item 3
+            </a>
+        </div>
+        <div id="collapseThere" class="collapse" data-parent="#accordion"> #data-parent (Hiyerarşiyi Kuran):Açılan kutunun hangi gruba ait olduğunu belirler.
+        
+            <div class="card-body"> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non earum, voluptates explicabo corrupti a exercitationem officiis rerum voluptatem, minima nemo fuga nulla eos sequi dicta dolores at saepe aut.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+</body>
+</html>

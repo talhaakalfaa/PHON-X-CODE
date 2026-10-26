@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="phoenix-pro.css">
+</head>
+<body>
+    <!-- Progress Indicator -->
+    <div class="progress-container phcode-no-lp-edit ">
+        <div class="progress-indicator">
+            <div class="progress-dot" data-section="2">
+                <span class="dot-number">1</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-section="3">
+                <span class="dot-number">2</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-section="4">
+                <span class="dot-number">3</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-section="5">
+                <span class="dot-number">4</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-section="6">
+                <span class="dot-number">5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="game-container phcode-no-lp-edit-this">
+        <!-- Section 1: What is Live Preview Editing -->
+        <div class="paper-card section active phcode-no-lp-edit" id="section-1" data-section="1" style="display: none;">
+            <div class="section-header ">
+                <h2 class="section-title">Canlı Önizlemede Düzenle</h2>
+                <p class="section-subtitle">Sayfanızı görsel olarak düzenleyin -&nbsp; <b>HTML'niz anında güncellenir</b></p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/editText.png" alt="Edit Text">
+                </div>
+                <div class="feature-item">
+                    <img src="images/imageLib.svg" alt="Image Library">
+                </div>
+                <div class="feature-item">
+                    <img src="images/drahNDrop.png" alt="Drag and Drop">
+                </div>
+                <div class="feature-item">
+                    <img src="images/layoutRulers.png" alt="Layout Rulers">
+                </div>
+            </div>
+
+            <div class="get-started-container phcode-no-lp-edit phcode-dismiss-lp-edit">
+                <button class="get-started-button" id="get-started-button">
+                    <span>Başlayın</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Section 2: Live Preview Edit -->
+        <div class="paper-card section phcode-no-lp-edit-this" id="section-2" data-section="2">
+            <div class="section-header phcode-no-lp-edit">
+                <h2 class="section-title">Metni Düzenle</h2>
+                <p class="section-subtitle">Aşağıdaki metni düzenlemek ve adınızı eklemek için çift tıklayın</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="editable-container">
+                    <span id="editable-name" class="editable-text">Merhaba ___</span>
+                </div>
+            </div>
+
+            <div class="success-message phcode-no-lp-edit" id="success-message">
+                <span class="success-icon">←</span>
+                <p id="success-message-text">Düzenlemeniz kodu güncelledi — <span id="undo-shortcut"></span> ile geri alın, <span id="redo-shortcut"></span> ile yineleyin.</p>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="2">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">Bu görevi tamamlamak için:</p>
+                <ol>
+                    <li>&quot;Merhaba ___&quot; metnine çift tıklayın</li>
+                    <li>Alt çizgileri adınızla değiştirin</li>
+                    <li>Değişikliklerinizi uygulamak için Enter&#39;a basın veya dışarı tıklayın</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Section 3: Change Images Live -->
+        <div class="paper-card section phcode-no-lp-edit-this" id="section-3" data-section="3">
+            <div class="section-header phcode-no-lp-edit">
+                <h2 class="section-title">Resimleri canlı olarak değiştirin</h2>
+                <p class="section-subtitle">Aşağıdaki resme tıklayarak Resim Kütüphanesinden beğendiğiniz bir resimle değiştirin.</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="image-container phcode-no-lp-edit-this">
+                    <img id="replaceable-image" src="images/placeholder.svg" alt="Replaceable image" class="replaceable-image">
+                </div>
+            </div>
+
+            <div class="success-message phcode-no-lp-edit" id="success-message-section3">
+                <p id="success-message-text-section3-url" style="display: none;">Resim Kütüphanesindeki <img src="images/download.svg" alt="Download" class="inline-icon"> İndir düğmesiyle resimleri indirebileceğinizi biliyor muydunuz?</p>
+                <p id="success-message-text-section3-local" style="display: none;">Bir resme tıklayarak onu indirmeden kullanabileceğinizi biliyor muydunuz?</p>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="3">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">Bu görevi tamamlamak için:</p>
+                <ul>
+                    <li>Resim Kütüphanesi'ni açmak için resme tıklayın (araç çubuğundaki <img src="images/image.svg" alt="Image" class="inline-icon"> simgesiyle veya çift tıklayarak açıp kapatabilirsiniz).</li>
+                    <li>Resim Kütüphanesinde: küçük resimleri önizlemek için üzerlerine gelin</li>
+                    <li>Sayfanıza yerleştirmek için bir küçük resme tıklayın veya önce indirmek için <img src="images/download.svg" alt="Download" class="inline-icon"> simgesine tıklayın</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Edit Elements Visually -->
+        <div class="paper-card section phcode-no-lp-edit-this" id="section-4" data-section="4">
+            <div class="section-header phcode-no-lp-edit">
+                <h2 class="section-title">Öğeleri görsel olarak düzenleyin</h2>
+                <p class="section-subtitle">Aşağıdaki kartı toplamda <strong>3 kart</strong> olacak şekilde çoğaltın<img src="images/duplicate.svg" alt="Duplicate" class="inline-icon">, ardından <strong>1 kartı silin<img src="images/trash.svg" alt="Delete" class="inline-icon"></strong>.</p>
+            </div>
+
+            <div class="progress-toast phcode-no-lp-edit" id="progress-toast-section4">
+                <p id="progress-toast-text-section4">
+                    <span id="card-count-status">1/3 cards</span>,
+                    <span id="delete-count-status">0/1 deleted</span>
+                </p>
+            </div>
+
+            <div class="undo-message phcode-no-lp-edit" id="undo-message-section4">
+                <span class="warning-icon">⚠️</span>
+                <p>Eyvah! Tüm kartlar silindi. Geri almak için <strong><span id="undo-shortcut-section4"></span></strong> tuşuna basın.</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="cards-container phcode-no-lp-edit-this">
+                    <div class="demo-card">
+                        <img src="images/placeholder.svg" alt="Kart resmi" class="card-image">
+                        <h3 class="card-title">Kart</h3>
+                        <p class="card-text">Üst kartı seçmek için yukarıdaki araç çubuğunda bulunan <img src="images/arrowUp.svg" alt="Yukarı" class="inline-icon">&nbsp;simgesine tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-message phcode-no-lp-edit" id="success-message-section4">
+                <span class="success-icon">✓</span>
+                <p id="success-message-text-section4">Harika! Öğeleri çoğaltma ve silme konusunda ustalaştınız.</p>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="4">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">Bu görevi tamamlamak için:</p>
+                <ol style="margin: 0 0 0 20px; padding: 0;">
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Seçmek için karta tıklayın.</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Toplam 3 kartınız olana kadar kartları çoğaltmak için <img src="images/duplicate.svg" alt="Çoğalt" class="inline-icon"> düğmesini kullanın veya <strong><span id="duplicate-shortcut"></span></strong> tuşuna basın.</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Herhangi bir kartı seçin ve kaldırmak için <img src="images/trash.svg" alt="Sil" class="inline-icon"> düğmesini kullanın veya <strong>Delete</strong> tuşuna basın.</li>
+                    <li style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">İpucu: <strong><span id="undo-shortcut-hint"></span></strong> ile geri alabilir ve <strong><span id="redo-shortcut-hint"></span></strong> ile yineleyebilirsiniz.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Section 5: Reorder Elements -->
+        <div class="paper-card section phcode-no-lp-edit-this" id="section-5" data-section="5">
+            <div class="section-header phcode-no-lp-edit">
+                <h2 class="section-title">Öğeleri sürükleyerek yeniden sıralayın</h2>
+                <p class="section-subtitle">Sırayı değiştirmek için herhangi bir notu sürükleyin.</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="notes-container phcode-no-lp-edit-this">
+                    <div class="sticky-note">İkinci Sıra</div>
+                    <div class="sticky-note">Birinci Sıra</div>
+                    <div class="sticky-note">Üçüncü Sıra</div>
+                </div>
+            </div>
+
+            <div class="success-message phcode-no-lp-edit" id="success-message-section5">
+                <span class="success-icon">✓</span>
+                <p id="success-message-text-section5">Öğeleri yeniden düzenlemek için sayfada herhangi bir yere sürükleyebilirsiniz.</p>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="5">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">Bu görevi tamamlamak için:</p>
+                <ol style="margin: 0 0 0 20px; padding: 0;">
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Sürüklemeye başlamak için herhangi bir nota tıklayıp basılı tutun</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Sırayı değiştirmek için yukarı veya aşağı hareket ettirin</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Yeni konumuna bırakmak için serbest bırakın</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Section 6: Edit Links & Preview Mode (Final Slide) -->
+        <div class="paper-card section phcode-no-lp-edit-this" id="section-6" data-section="6">
+            <div class="section-header phcode-no-lp-edit">
+                <h2 class="section-title">Bağlantıları düzenleyin ve sayfanızı önizleyin</h2>
+                <p class="section-subtitle">Bu bağlantının işaret ettiği yeri değiştirmek için araç çubuğundaki <img src="images/link.svg" alt="Link" class="inline-icon"> simgesini seçin.</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="link-demo-container phcode-no-lp-edit-this">
+                    <p class="link-demo-text"><a id="editable-link" href="https://docs.phcode.dev/app-links/live-preview-edit" class="demo-link" target="_blank">Bağlantıyı Düzenle</a></p>
+                </div>
+            </div>
+
+            <div class="success-message phcode-no-lp-edit" id="success-message-section6">
+                <span class="success-icon">✓</span>
+                <p id="success-message-text-section6">Bir bağlantıyı düzenlediniz.</p>
+            </div>
+
+            <div class="mode-explanation phcode-no-lp-edit">
+                <h3 class="mode-title">Düzenleme modu ve Önizleme modu</h3>
+                <div class="mode-cards" id="mode-cards-hover">
+                    <div class="mode-card edit-mode-card">
+                        <div class="mode-icon"><i class="fas fa-edit"></i></div>
+                        <div class="mode-info">
+                            <strong>Düzenleme modu</strong>
+                            <p>Sayfadaki öğeleri seçin ve değiştirin</p>
+                        </div>
+                    </div>
+                    <div class="mode-card preview-mode-card">
+                        <div class="mode-icon"><img src="images/playButton.svg" alt="Oynat" class="mode-icon-svg svg-gold"></div>
+                        <div class="mode-info">
+                            <strong>Önizleme modu</strong>
+                            <p>Sayfanızı ziyaretçilerin göreceği şekilde görün</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mode-hint">Modlar arasında geçiş yapmak için <strong>F8</strong> tuşuna basın veya <span class="play-button-hint"><img src="images/playButton.svg" alt="Play" class="play-hint-svg svg-gold"></span> düğmelerine tıklayın.</p>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="6">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">İpuçları:</p>
+                <ul style="margin: 0 0 0 20px; padding: 0; list-style-type: disc;">
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Düzenlemek üzere seçmek için herhangi bir bağlantıya tıklayın</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Bağlantıları ayrı bir sayfada açmak için <strong>Yeni sekmede aç</strong> seçeneğini etkinleştirin</li>
+                    <li style="margin-bottom: 0; color: var(--text-primary);">Bağlantıları ve etkileşimleri test etmek için Önizleme moduna (<strong>F8</strong>) geçiş yapın</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 7: Completion Slide -->
+        <div class="paper-card section completion-slide phcode-no-lp-edit-this" id="section-7" data-section="7">
+            <div class="completion-content phcode-no-lp-edit">
+                <div class="completion-icon">
+                    <img src="images/rocket.svg" alt="Roket" class="completion-icon-svg svg-orange">
+                </div>
+                <h2 class="completion-title">Oluşturmaya hazırsınız!</h2>
+                <p class="completion-body">Canlı Önizleme ile düzenleme yapmayı öğrendiniz.<br>Düzenlemeye başlamak için HTML dosyalarınızın bulunduğu bir klasörü açın.</p>
+
+                <p class="completion-helper">Daha fazla yardıma mı ihtiyacınız var?</p>
+
+                <div class="resource-links">
+                    <a href="https://www.youtube.com/@phoenixcodeeditor3764" target="_blank" class="resource-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://docs.phcode.dev/app-links/live-preview-edit" target="_blank" class="resource-link">
+                        <i class="fas fa-book"></i>
+                        <span>Dokümantasyon</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+        </div>
+
+        <!-- Section 8: Bonus - Check Layout with Measurements -->
+        <div class="paper-card section bonus-slide phcode-no-lp-edit-this" id="section-8" data-section="8">
+            <div class="section-header phcode-no-lp-edit">
+                <span class="bonus-badge">Bir şey daha</span>
+                <h2 class="section-title">Düzeni ölçümlerle kontrol edin</h2>
+                <p class="section-subtitle">Hangi kutunun yanlış hizalandığını görmek için araç çubuğundaki <img src="images/verticalEllipsis.svg" alt="menu" class="inline-icon"> simgesine tıklayın ve <strong>Ölçümleri Göster</strong>'i seçin.</p>
+            </div>
+
+            <div class="playground phcode-no-lp-edit-this">
+                <div class="alignment-demo phcode-no-lp-edit-this">
+                    <div class="align-box" id="align-box-1"><span class="phcode-no-lp-edit"><img src="images/verticalEllipsis.svg" alt="menu" class="inline-icon"> simgesine tıklayın</span></div>
+                    <div class="align-box misaligned"><span>Kutu</span></div>
+                    <div class="align-box"><span>Kutu</span></div>
+                </div>
+            </div>
+
+            <div class="slide-controls phcode-no-lp-edit"></div>
+
+            <div class="hint-content-inline phcode-no-lp-edit" data-section="8">
+                <p style="margin-bottom: 12px; font-weight: 600; color: var(--text-primary);">İpuçları:</p>
+                <ul style="margin: 0 0 0 20px; padding: 0; list-style-type: disc;">
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Araç çubuğundaki <img src="images/verticalEllipsis.svg" alt="More options" class="inline-icon"> simgesine tıklayın veya menüyü açmak için sağ tıklayın</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Boşluk ve hizalama kılavuzlarını görmek için <strong>Ölçümleri Göster</strong>'i etkinleştirin</li>
+                    <li style="margin-bottom: 8px; color: var(--text-primary);">Ölçümler, hizalama sorunlarını hızlıca fark etmenize yardımcı olur</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Confetti Container for Celebrations -->
+    <div class="confetti-container phcode-no-lp-edit" id="confetti-container"></div>
+
+    <!-- Play Button Arrows (shown on section 6 hover) -->
+    <div class="arrow-pointer arrow-left" id="arrow-left">
+        <img src="images/arrowUp.svg" alt="Ok" class="arrow-svg svg-gold">
+    </div>
+    <div class="arrow-pointer arrow-center" id="arrow-center">
+        <img src="images/arrowUp.svg" alt="Ok" class="arrow-svg svg-gold">
+    </div>
+
+    <script src="phoenix-pro.js"></script>
+</body>
+</html>

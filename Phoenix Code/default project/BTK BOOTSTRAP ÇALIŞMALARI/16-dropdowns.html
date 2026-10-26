@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>Dropdowns</title>
+        <style>
+        
+        </style>
+    </head>
+<body class="w-75 mx-auto my-4">
+    
+    <div class="dropdown"> #dropdown (Açılır Menü Kapsayıcısı):Açılır menüyü oluşturan tüm parçaları (buton ve liste) bir arada tutan dış kutudur.
+        
+        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> #dropdown-toggle (Tetikleyici Buton):: Menüyü açıp kapatan, tıklanabilir kısımdır.
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu"> #dropdown-menu (Gizli Liste Kutusu):Tıklanınca açılan, seçeneklerin listelendiği kapsayıcı kutudur.
+            <a href="#" class="dropdown-item">Link 1</a> #dropdown-item (Seçenek):Menünün içindeki her bir link veya butondur.
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item">Link 3</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="dropdown">
+        
+        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item">Link 3</a>
+            <div class="dropdown-divider"></div> #dropdown-divider (Ayırıcı Çizgi):Menü içindeki seçenekleri gruplara ayırmak için araya ince, yatay bir çizgi çeker.
+            <a href="#" class="dropdown-item">Link 4</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="dropdown">
+        
+        <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item">Link 3</a>
+            <div class="dropdown-header">Header</div> #dropdown-header (Grup Başlığı):Menü içinde tıklanamayan, gri renkli, küçük puntolu kategori başlığı oluşturur.
+            <a href="#" class="dropdown-item">Link 4</a>
+            <a href="#" class="dropdown-item">Link 5</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="dropdown">
+        
+        <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> #data-toggle (Tetikleyici - BS4):HTML elemanına "Tıklanınca bir şeyi aç/kapa" emrini verir.
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a> #dropdown-item active (Seçili Öğe):O anki sayfanın veya seçimin bu olduğunu belirtir. Arka planı mavi, yazıyı beyaz yapar.
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item disabled">Link 3</a> #dropdown-item disabled (Pasif Öğe):Linki tıklanamaz hale getirir, rengini soluklaştırır ve farenin tıklama işaretini engeller.
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="dropdown dropright"> #dropdown dropright (Sağa Açılan - BS4):Menünün aşağı değil, düğmenin sağına doğru açılmasını sağlar.
+        
+        <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item disabled">Link 3</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="dropdown dropleft float-right"> #dropdown dropleft float-right (Sola Açılan & Sağa Yaslı - BS4):dropleft: Menüyü düğmenin soluna doğru açar. (BS5: dropstart)////float-right: Düğmeyi bulunduğu satırın en sağına yapıştırır. (BS5: float-end)
+        
+        <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+    
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item disabled">Link 3</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="btn-group">
+    
+        <button type="button" class="btn btn-primary">Button 1</button>
+        <button type="button" class="btn btn-primary">Button 2</button>
+        
+        <div class="btn-group">
+        
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button 3</button>
+            
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Link 1</a>
+                <a href="" class="dropdown-item">Link 2</a>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="btn-group">
+    
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+       <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+        </div>
+    </div>
+    
+    <div class="btn-group">
+    
+        <button type="button" class="btn btn-danger">Primary</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+       <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+        </div>
+    </div>
+    
+    <div class="btn-group">
+    
+        <button type="button" class="btn btn-warning">Primary</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button> #dropdown-toggle-split (Ayrık Ok Butonu):Bir butonu ikiye böldüğünde (Sol taraf işlem yapar, sağ taraf menü açar), ok işaretinin olduğu o küçük butonun kenar boşluklarını (padding) daraltır.
+       <div class="dropdown-menu">
+            <a href="#" class="dropdown-item active">Link 1</a>
+            <a href="#" class="dropdown-item">Link 2</a>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="btn-group-vertical">
+    
+        <button type="button" class="btn btn-primary">Button 1</button>
+        <button type="button" class="btn btn-primary">Button 2</button>
+        
+        <div class="btn-group">
+        
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Button 3</button>
+            
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Link 1</a>
+                <a href="" class="dropdown-item">Link 2</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+</body>
+</html>

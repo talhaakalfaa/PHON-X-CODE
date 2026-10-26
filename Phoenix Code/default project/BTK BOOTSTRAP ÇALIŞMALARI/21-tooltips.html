@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>Tooltips</title>
+    </head>
+<body class="container my-4">
+    
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text"> #TOOLTIP (Bilgi Baloncuğu):Fare imleciyle bir öğenin (buton, ikon, link) üzerine gelindiğinde açılan, açıklayıcı ve küçük bilgi kutucuğudur.
+        Hover over me
+    </a>
+    
+    <br><br>
+    
+    <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h3>Header</h3><br><p>Tooltip text</p>" data-html="true"> #data-html="true" (Zengin İçerik Desteği):Tooltip kutusunun içinde sadece düz yazı mı, yoksa HTML kodları (kalın yazı, ikon, alt satıra geçme vb.) mı olacağını belirler.
+        Tooltip with Html
+    </button>
+    
+    <br><br>
+    
+    <p>
+        
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="top"> #Tooltip Text:Tooltip kutusunun içinde yazan asıl mesajdır. (Örneğin: "Dosyayı silmek için tıkla", "Profil ayarları" gibi.)
+        Tooltip on top
+    </a>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="right"> #data-placement (Konum Belirleyici):Bilgi baloncuğunun, fareyle üzerine geldiğin öğenin (butonun/linkin) hangi tarafında açılacağını söyler.
+        Tooltip on right
+    </a>  
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="bottom">
+        Tooltip on bottom
+    </a>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="left">
+        Tooltip on left
+    </a>
+        
+    </p>
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    
+    <script>
+    
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    
+    </script>
+    
+</body>
+</html>
